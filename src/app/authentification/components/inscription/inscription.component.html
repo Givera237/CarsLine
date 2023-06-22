@@ -1,0 +1,26 @@
+<form [formGroup]="inscriptionForm">   
+    <div class="form-group">
+        <label for="nom">Nom</label>
+        <input id="nom" type="text" formControlName="nom">
+    </div>
+    <div class="form-group">
+        <label for="prenom">Prenom</label>
+        <input id="prenom" type="text" formControlName="prenom" rows="4">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email">
+    </div>
+    <div class="form-group">
+        <label for="pass">Password</label>
+        <input id="pass" type="password" formControlName="pass" >
+    </div>
+    <div class="form-group">
+        <label for="telephone">Telephone</label>
+        <input id="telephone" type="tel" formControlName="telephone" >
+    </div>
+    <div class="action-buttons">
+        <button type="submit" (click)="onSubmit()" [disabled]="inscriptionForm.invalid">Enregistrer</button>
+    </div>
+    <h6>Vous avez déjà un compte? <a routerLink="authentification/login" (click)="onConnect()"> Connectez vous</a> </h6>
+</form>
