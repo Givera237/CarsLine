@@ -1,0 +1,56 @@
+<div class="class">
+    <div class="form-card" style="margin-top: 120px;">
+        <h2> NOUVEAU SITE </h2>
+    <form [formGroup]="voitureForm">   
+        <div class="form-group">
+            <label for="marque">Marque</label>
+            <input id="marque" type="text" formControlName="marque">
+        </div>
+        <div class="form-group">
+            <label for="couleur">Couleur</label>
+            <input id="couleur" type="text" formControlName="couleur">
+        </div>
+        <div class="form-group">
+            <label for="modele">Modele</label>
+            <input id="modele" type="text" formControlName="modele">
+        </div>
+        <div class="form-group">
+            <label for="categorie">Categorie</label><!--requetes back-->
+            <input id="categorie" type="text" formControlName="categorie">
+        </div>
+        <div class="form-group">
+            <label for="nbre_place">Nombre de place</label>
+            <input id="nbre_place" type="number" formControlName="nb_place">
+        </div>
+        <div class="form-group">
+            <label for="anneeF">Annee de fabrication</label>
+            <input id="anneef" type="number" formControlName="anneeF">
+        </div>
+        <div class="form-group">
+            <label for="energie">Consommable</label>
+            <input id="energie" type="text" formControlName="energie">
+        </div>
+        <div class="form-group">
+            <label for="capacite">Capacité du reservoir</label>
+            <input id="capacite" type="number" formControlName="capacite">
+        </div>
+        <div class="form-group">
+            <label for="transmission">Transmission</label>
+            <input id="transmission" type="text" formControlName="transmission">
+        </div>
+        <div class="form-group">
+            <label for="image">image</label>
+            <input type="file" (change)="getFile($event)" multiple/>
+        </div>
+            
+       
+            <div class="action-buttons">
+                <button type="submit" (click)="onSubmitForm(); submitData(); onConnect()">Enregistrer</button>
+            </div>
+           
+      
+    </form>
+   
+    
+  
+    </div>

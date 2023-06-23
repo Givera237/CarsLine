@@ -1,0 +1,27 @@
+<div *ngIf="annonce | async as annonces">
+<div class="card mb-3" style="max-width: 2500px; max-height: 2000px;" *ngFor="let voiture of TabVoitures">
+    <div class="row g-0" *ngIf="voiture.id_voiture === AnnonceId">
+      <div class="col-md-4">
+        <div *ngFor="let img of Tab">
+        <img  src="../../../assets/{{img.nom}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Modele : <strong>{{voiture.modele}}</strong></h5>
+          <h5 class="card-title">Marque : <strong>{{voiture.marque}}</strong></h5>
+          <h5 class="card-title">Categorie : <strong>{{voiture.categorie}}</strong></h5>
+          <h5 class="card-title">Kilométrage : <strong>{{annonces}}</strong>Km</h5>
+          <h5 class="card-title">Année de fabrication : <strong>{{voiture.anneeF}}</strong></h5>
+          <h5 class="card-title">Type de transmission : <strong>{{voiture.transmission}}</strong></h5>
+          <h5 class="card-title">Energie utilisé : <strong>{{voiture.energie}}</strong></h5>
+          <h5 class="card-title">Capacité du reservoir : <strong>{{2000}}</strong>L</h5>
+          <h5 class="card-title">couleur : <strong>{{voiture.couleur}}</strong></h5>
+          <h5 class="card-title">Nombre de place : <strong>{{voiture.nb_place}}</strong></h5>
+          <p class="card-text">{{annonces}}</p>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

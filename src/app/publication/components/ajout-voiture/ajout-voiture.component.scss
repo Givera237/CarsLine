@@ -1,0 +1,49 @@
+
+.form-card,.site-view-card  {
+    box-sizing: border-box;
+    width: 50%;
+   /* margin-bottom: 100px;*/
+    /*margin-top: 10px;
+    margin-bottom: 50px;
+    /*margin: 20px auto;*/
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    box-shadow: lightgray 4px 4px 20px;
+  }
+  
+  .site-view-card {
+    img {
+      margin-top: 50px;
+      /*width: 100%;*/
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+    }
+  }
+
+  .form-group {
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  input, textarea {
+    width: 50%;
+  }
+  
+  .action-buttons {
+    width: 100%;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+  }

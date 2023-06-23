@@ -53,7 +53,6 @@ export class LoginComponent
       {
         if (response.status === 200) 
         {
-          console.log(response.body.id_utilisateur);
           environment.id_utilisateur = response.body.id_utilisateur;
           console.log(environment.id_utilisateur);
           this.router.navigateByUrl('');
@@ -67,14 +66,10 @@ export class LoginComponent
         {
           this.erreur = 'Adresse deja exixtante Veuillez réessayer!!';
           console.log(error);
-        //  console.log(error.statusText)
-          //this.router.navigateByUrl(`authentification/login`);
         }
         if (error.status === 500) 
         {
           this.erreur = 'Erreur système réessayer plus tard'
-        //  console.log(error.statusText)
-          //this.router.navigateByUrl(`authentification/login`);
         }
         console.error(error.body); // Afficher l'erreur à l'utilisateur
       } 
